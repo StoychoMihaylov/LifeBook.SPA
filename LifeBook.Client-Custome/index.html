@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Life Book</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style/lifeBook.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <header class="menu" id="menu">
+        <a href="#" class="menu-item" id="linkHome">Home</a>
+        <a href="#" class="menu-item" id="linkLogin">Login</a>
+        <a href="#" class="menu-item" id="linkRegister">Register</a>
+        <a href="#" class="menu-item" id="linkArticles">Articles</a>
+        <a href="#" class="menu-item" id="linkCreateArticle">Create Article</a>
+        <a href="#" class="menu-item" id="linkLogout">Logout</a>
+        <span class="menu-item" id="greeting"></span>
+    </header>
+    <main>
+        <div id="loadingBox" class="notification">Loading &hellip;</div>
+
+        <div id="infoBox" class="notification">Info</div>
+
+        <div id="errorBox" class="notification">Error</div>
+
+        <section id="viewHome">
+            <h1 class="titleForm">Welcome</h1>
+            <div class="content">
+                <p class="body-text">Welcomte to Life Book</p>
+            </div>
+        </section>
+        <section id="viewLogin">
+            <h1 class="titleForm">Please login</h1>
+            <div class="content">
+                <form class="form">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </section>
+        <section id="viewRegister">
+            <h1 class="titleForm">Please register</h1>
+            <div class="content">
+                <form class="form">
+                    <label for="registerEmail">E-mail:</label>
+                    <input type="text" id="registerEmail">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword">
+                    <label for="registerConfirmPassword">Confirm Password:</label>
+                    <input type="password" id="registerConfirmPassword">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </section>
+        <section id="viewArticles">
+            <div id="articles-container">
+            </div>
+        </section>
+        <section id="viewCreateArticle">
+            <h1 class="titleForm">Create new article</h1>
+            <div class="content">
+                <form class="form">
+                    <label for="titleCreateArticle">Title:</label>
+                    <input type="text" id="titleCreateArticle">
+                    <label for="contentCreateArticle">Content:</label>
+                    <textarea type="text" id="contentCreateArticle" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Create">
+                </form>
+            </div>
+        </section>
+        <section id="viewEditArticle">
+            <h1 class="titleForm">Edit article</h1>
+            <div class="content">
+                <form class="form">
+                    <label for="titleEditArticle">Title:</label>
+                    <input type="text" id="titleEditArticle">
+                    <label for="contenEdittArticle">Content:</label>
+                    <textarea type="text" id="contentEditArticle" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Edit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>Life Book - SPA by Stoycho Mihaylov</footer>
+</body>
+
+</html>
